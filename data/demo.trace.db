@@ -1,0 +1,9 @@
+2022-03-08 15:50:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_JOGADOR" not found; SQL statement:
+select jogador0_.id as id1_0_, jogador0_.tx_nome as tx_nome2_0_ from tb_jogador jogador0_ limit ? [42102-200]
+2022-03-08 15:51:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_JOGADOR" not found; SQL statement:
+select jogador0_.id as id1_0_, jogador0_.tx_nome as tx_nome2_0_ from tb_jogador jogador0_ limit ? [42102-200]
+2022-03-08 15:52:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_JOGADOR" not found; SQL statement:
+select jogador0_.id as id1_0_, jogador0_.tx_nome as tx_nome2_0_ from tb_jogador jogador0_ limit ? [42102-200]

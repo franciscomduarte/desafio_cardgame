@@ -1,0 +1,1 @@
+INSERT INTO tb_jogador (id, tx_nome) VALUES (1, 'Francisco Molina');
