@@ -11,7 +11,11 @@ import javax.persistence.Table;
 @Table(name = "tb_jogador")
 public class Jogador {
 	
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    
+    @Column(name = "tx_nome", nullable = false)
     private String nome;
     
     public Jogador() {
@@ -22,8 +26,6 @@ public class Jogador {
     	this.nome = nome;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
@@ -31,8 +33,7 @@ public class Jogador {
 	public void setId(long id) {
 		this.id = id;
 	}
-
-	@Column(name = "tx_nome", nullable = false)
+	
 	public String getNome() {
 		return nome;
 	}
