@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Quiz</title>
+</head>
+<body>
+  <h2>Quiz</h2>
+<table>
+   <th:block th:each="enquete : ${enquetes}">
+      <tr>
+         <td th:text="${enquete.filmes[0].id}">...</td>
+         <td th:text="${enquete.filmes[1].id}">...</td>
+      </tr>
+   </th:block>
+</table>
+  <div th:if="${#lists.isEmpty(enquetes)}">
+    <p>Nenhuma enquete cadastrada</p>
+  </div>
+
+</body>
+</html>

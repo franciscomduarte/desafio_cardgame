@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Reading List</title>
+</head>
+<body>
+  <h2>Jogadores</h2>
+<table>
+   <th:block th:each="jogador : ${jogadores}">
+      <tr>
+         <td th:text="${jogador.id}">...</td>
+         <td th:text="${jogador.nome}">...</td>
+      </tr>
+   </th:block>
+</table>
+  <div th:if="${#lists.isEmpty(jogadores)}">
+    <p>Nenhum Jogador Cadastrado</p>
+  </div>
+
+</body>
+</html>
