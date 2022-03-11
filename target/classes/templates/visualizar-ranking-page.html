@@ -6,20 +6,8 @@
     </head>
         <body>
         	<div th:replace="fragments/header :: header"/>
-        	<div class="container-fluid">
-	        	
-	        	<table id="table_responder_quiz" class="table table-striped table-bordered table-hover">
-	    	        <thead>
-			            <tr>
-			                <th>Id</th>
-			                <th>Nome</th>               
-			                <th>Ações</th>  
-			            </tr>
-			        </thead>
-			        <tbody>
-			        </tbody>
-	        	</table>
-        	</div>
+
+				<div id="ranking"></div>
         	
         	<br>
         	
@@ -28,5 +16,4 @@
         </body>
 </html>
 
-<script type="text/javascript" th:src="@{quiz.js}"></script>
-
+<script type="text/javascript" th:src="@{ranking.js}"></script>

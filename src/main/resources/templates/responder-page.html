@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Bem vindo ao Quiz de Filmes</title>
+        <div th:replace="fragments/header :: header-css"/>
+        
+        <style>
+	        .div1 {
+			    width: 500px;
+			    height: 100px;
+			    display: inline-block;
+			    border-width: 1px;
+			    border-color: black;
+			    box-sizing: 1px;
+			    
+			}
+        </style>
+        
+    </head>
+    <body>
+    	<div th:replace="fragments/header :: header"/>
+    	<div class="container-fluid">
+	    
+	    	<form id="form_responder">
+	    		<div>
+			    	<div id="filme1" class="div1"></div>
+			    	<div id="filme2" class="div1"></div>    
+	    		</div>
+		    	<br>
+		    	<button type="submit" value="Responder" >Responder</button>
+	    	</form>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	
+    	<div th:replace="fragments/footer :: footer"/>
+    </body>
+</html>
+
+<script type="text/javascript" th:src="@{responder.js}"></script>

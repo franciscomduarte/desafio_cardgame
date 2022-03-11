@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Bem vindo ao Quiz de Filmes</title>
+        <div th:replace="fragments/header :: header-css"/>
+    </head>
+    <body>
+    	<div th:replace="fragments/header :: header"/>
+    	<div class="container-fluid">
+        <p>Escolha os filmes que deseja comparar</p>
+        
+	        <form id="form_enquete" method="post">
+	        
+	        	<input list="filme1" name="filme1" id="f1" required/>
+				<datalist id="filme1">
+				</datalist>
+				x
+				<input list="filme2" name="filme2" id="f2" required/>
+				<datalist id="filme2">
+				</datalist>
+				
+				<button type="submit" value="Formar Enquete" >Formar Enquete</button>
+				
+				<br>
+				<br>
+				
+				<table id="table_enquete" class="table table-striped table-bordered table-hover">
+	    	        <thead>
+			            <tr>
+			                <th>Id</th>
+			                <th>Quiz</th>  
+			                <th>Filme 1</th>
+			                <th>Filme 2</th>  
+			                <th>Respondida</th>            
+			                <th>Ações</th>  
+			            </tr>
+			        </thead>
+			        <tbody>
+			        </tbody>
+	        	</table>
+	        	
+	        	<br>
+	        	
+	        </form>
+    	</div>
+        <div th:replace="fragments/footer :: footer"/>
+        
+    </body>
+</html>
+
+<script type="text/javascript" th:src="@{enquete.js}"></script>
